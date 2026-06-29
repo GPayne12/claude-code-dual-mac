@@ -11,6 +11,9 @@
 !*_ed25519.pub
 !*_rsa.pub
 
+# private project files (Claude Project knowledge — not for public repo)
+project-files/
+
 # macOS
 .DS_Store
 
