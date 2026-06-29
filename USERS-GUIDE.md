@@ -252,6 +252,13 @@ ssh <user>@primary "tail -20 ~/Claude/monitoring/health-check.log"
 ssh <user>@primary "tail -20 ~/Claude/monitoring/backup.log"
 ```
 
+### Check the audit log
+The `PostToolUse` hook logs every Bash, Write, and Edit tool call Claude makes on primary:
+```bash
+ssh <user>@primary "tail -20 ~/Claude/monitoring/audit.log"
+```
+Format: `[2026-06-29T20:22:03Z] TOOL=Bash`
+
 ### Run a manual backup
 ```bash
 ssh <user>@primary "bash ~/Claude/monitoring/backup.sh"
